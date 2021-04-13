@@ -1,0 +1,110 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "GameTOP.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/GameTOP.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameTOP.Interface.dll": {}
+        }
+      },
+      "GameTOP.lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "GameTOP.Interface": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GameTOP.lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameTOP.lib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GameTOP.Interface/1.0.0": {
+      "type": "project",
+      "path": "../GameTOP.Interface/GameTOP.Interface.csproj",
+      "msbuildProject": "../GameTOP.Interface/GameTOP.Interface.csproj"
+    },
+    "GameTOP.lib/1.0.0": {
+      "type": "project",
+      "path": "../GameTOP.lib/GameTOP.lib.csproj",
+      "msbuildProject": "../GameTOP.lib/GameTOP.lib.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "GameTOP.Interface >= 1.0.0",
+      "GameTOP.lib >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\debor\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\debor\\Desktop\\Consolecore\\GameTOP\\GameTOP.csproj",
+      "projectName": "GameTOP",
+      "projectPath": "C:\\Users\\debor\\Desktop\\Consolecore\\GameTOP\\GameTOP.csproj",
+      "packagesPath": "C:\\Users\\debor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\debor\\Desktop\\Consolecore\\GameTOP\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\debor\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\debor\\Desktop\\Consolecore\\GameTOP.Interface\\GameTOP.Interface.csproj": {
+              "projectPath": "C:\\Users\\debor\\Desktop\\Consolecore\\GameTOP.Interface\\GameTOP.Interface.csproj"
+            },
+            "C:\\Users\\debor\\Desktop\\Consolecore\\GameTOP.lib\\GameTOP.lib.csproj": {
+              "projectPath": "C:\\Users\\debor\\Desktop\\Consolecore\\GameTOP.lib\\GameTOP.lib.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
